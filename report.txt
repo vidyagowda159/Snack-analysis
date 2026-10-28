@@ -1,0 +1,63 @@
+Nutrition coparison - protein, Fiber, fat
+------------------------------------------
++-----+----------+---------+-----------------------+---------------------+---------------+
+|kind |brand     |num_items|avg_protein_per_100kcal|avg_fiber_per_100kcal|avg_fat_pct_cal|
++-----+----------+---------+-----------------------+---------------------+---------------+
+|drink|McDonald's|150      |2.69                   |0.28                 |19.78          |
+|drink|Starbucks |75       |3.63                   |0.23                 |11.48          |
+|food |McDonald's|110      |4.41                   |0.71                 |41.77          |
+|food |Starbucks |113      |3.08                   |0.82                 |40.5           |
++-----+----------+---------+-----------------------+---------------------+---------------+
+
+Based on the above summary data, I have concluded that
+In food category,
+1. McDonald's food is better in terms of average protein per 100kcal.
+2. Starbuck's food is better in terms of average fiber per 100kcal.
+3. Both McDonald's and Starbuck's food have similar average fat percentage so it is a tie.
+
+In drinks category,
+1. Starbuck's drink is better in terms of average protein per 100kcal.
+2. McDonald's drink is better in terms of average fiber per 100kcal.
+3. Starbuck's drink is better in terms of average fat percentage
+------------------------------------------------------------------------------------------------
+
+Sodium content comparison 
+--------------------------
+sodium comparison limited to drinks because Starbucks food data has no sodium values.
++----------+-----+-------------+
+|     brand| kind|avg_sodium_mg|
++----------+-----+-------------+
+|McDonald's| food|       996.64|
+|McDonald's|drink|       128.43|
+| Starbucks|drink|         64.0|
+| Starbucks| food|         NULL|
++----------+-----+-------------+
+
+------------------------------------------------------------------------------------------------
+
+Overall comparison
+-------------------
+
++----------------------+------------+------------+------------+-------------+---------------+--------------+---------------+
+| Measure              | Better     | Food: McD  | Food: SB   | Food winner | Drinks: McD   | Drinks: SB   | Drinks winner |
++----------------------+------------+------------+------------+-------------+---------------+--------------+---------------+
+| Calories             | Lower      | 462.09     | 356.64     | SB          | 299.47        | 136.87       | SB            |
+| Fat (g)              | Lower      | 22.94      | 16.35      | SB          | 7.73          | 2.67         | SB            |
+| Fat % of calories    | Lower      | 41.77      | 40.50      | Tie         | 19.78         | 11.48        | SB            |
+| Protein per 100 kcal | Higher     | 4.41       | 3.08       | McD         | 2.69          | 3.63         | SB            |
+| Fiber per 100 kcal   | Higher     | 0.71       | 0.82       | SB          | 0.28          | 0.23         | McD           |
+| Sodium (mg)          | Lower      | N/A        | N/A        | N/A         | 128.43        | 64.00        | SB            |
++----------------------+------------+------------+------------+-------------+---------------+--------------+---------------+
+
+
+On the measures we compared, Starbucks comes out healthier overall, winning 8 of 11 comparisons,
+mainly on calories, protein, fiber. and fat McDonald’s does better on fiber per 100 kcal for drinks, 
+and fat % of calories was a tie. 
+
+This is a comparison of menu items as listed, without serving sizes, so it shows which menu is
+lighter per item, not necessarily which brand is healthier for every customer.
+
+Note: The scorecard is based on averages. As a robustness check we also compared medians for 
+calories, fat, carbs, fiber and protein. The medians agree with the averages for calories and 
+fat, but not for fiber in food, so we treat the fiber result as inconclusive.
+							

@@ -1,3 +1,10 @@
+Datasets used
+--------------
+1. menu.xlsx(McDonald’s) - Food and drinks 24 columns - out of 260(raw)  260(used)
+2. starbucks-menu-nutrition-drinks.xlsx(Starbucks) - Drinks - out of 177(raw)  75(used)
+3. starbucks-menu-nutrition-food.xlsx(Starbucks) - Food	- out of 113(raw) 113(used)
+4. starbucks_drinkMenu_expanded.xlsx(Starbucks) - Drinks by size and milk - 242(raw) not used 
+
 Nutrition coparison - protein, Fiber, fat
 ------------------------------------------
 +-----+----------+---------+-----------------------+---------------------+---------------+
@@ -49,15 +56,11 @@ Overall comparison
 | Sodium (mg)          | Lower      | N/A        | N/A        | N/A         | 128.43        | 64.00        | SB            |
 +----------------------+------------+------------+------------+-------------+---------------+--------------+---------------+
 
+The result: 
+1. Starbucks wins 8 of 11 comparisons, McDonald’s wins 2, and 1 was a tie.
+2. McDonald’s is better: protein per 100 kcal in food, and fiber per 100 kcal in drinks.
+3. The weak spot: the avg_fiber_g in food states starbucks is better but the median flips the
+   result by making McDonalds better. So we can treat the fiber result as inconclusive
+4. The limits: no serving sizes, different menus, missing nutrients, sugar couldn’t be compared, 
+   and the thresholds and tie rules are our own choices.
 
-On the measures we compared, Starbucks comes out healthier overall, winning 8 of 11 comparisons,
-mainly on calories, protein, fiber. and fat McDonald’s does better on fiber per 100 kcal for drinks, 
-and fat % of calories was a tie. 
-
-This is a comparison of menu items as listed, without serving sizes, so it shows which menu is
-lighter per item, not necessarily which brand is healthier for every customer.
-
-Note: The scorecard is based on averages. As a robustness check we also compared medians for 
-calories, fat, carbs, fiber and protein. The medians agree with the averages for calories and 
-fat, but not for fiber in food, so we treat the fiber result as inconclusive.
-							
